@@ -8,11 +8,11 @@
 <body>
     <div> 
         {% for item in livros %}
-            <div>
+            <ul>
                 <h2>{{ item.titulo }}</h2>
                 <p>Autor: {{ item.autor }}</p>
                 <p>Páginas: {{ item.paginas }}</p>
-            </div>
+            </ul>
         {% endfor %}
     </div>
 </body>

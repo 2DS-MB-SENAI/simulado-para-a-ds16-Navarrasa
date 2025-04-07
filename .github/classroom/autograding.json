@@ -54,7 +54,7 @@
 
     {
       "name": "3.1 - Teste Model Usuario",
-      "run": "python manage.py shell -c \"from usuarios.models import Usuario; u = Usuario(username='test', telefone='+5511999999999'); u.set_password('test123'); u.full_clean(); print('OK')\"",
+      "run": "python manage.py shell -c \"from usuarios.models import CustomUser; u = CustomUser(username='test', telefone='+5511999999999'); u.set_password('test123'); u.full_clean(); print('OK')\"",
       "output": "OK",
       "timeout": 10,
       "points": 10

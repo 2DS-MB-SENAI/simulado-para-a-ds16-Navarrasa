@@ -47,7 +47,7 @@ def login_usuarios(request):
         refresh = RefreshToken.for_user(usuario)
         return Response({
             # Se o usuário for encontrado, ele irá gerar os tokens JWT e retornar na resposta.
-            'acess': str(refresh.access_token),
+            'access': str(refresh.access_token),
             'refresh': str(refresh)
         }, status=status.HTTP_200_OK)
     return Response({'Erro': 'Credenciais Inválidas!'}, status=status.HTTP_401_UNAUTHORIZED)
